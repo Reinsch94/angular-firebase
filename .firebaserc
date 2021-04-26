@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "social-media-4cf0e": {
+      "hosting": {
+        "angular-firebase": [
+          "social-media-4cf0e"
+        ]
+      }
+    }
+  }
+}
