@@ -4,12 +4,20 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-pages',
   template: `
     <nb-layout>
-      <router-outlet></router-outlet>
+      <nb-layout-header fixed>
+        <app-header></app-header>
+      </nb-layout-header>
+
+      <nb-layout-column>
+        <router-outlet> </router-outlet>
+      </nb-layout-column>
+
+      <nb-layout-footer fixed>
+        <app-footer></app-footer>
+      </nb-layout-footer>
     </nb-layout>
   `,
 })
 export class PagesComponent implements OnInit {
-  ngOnInit(): void {
-    console.log('toto');
-  }
+  ngOnInit(): void {}
 }

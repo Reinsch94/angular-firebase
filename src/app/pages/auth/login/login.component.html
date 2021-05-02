@@ -1,0 +1,28 @@
+<nb-card>
+  <nb-card-header>Login</nb-card-header>
+  <nb-card-body class="center">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <input
+        nbInput
+        type="email"
+        placeholder="Your email"
+        formControlName="email"
+      />
+
+      <input
+        nbInput
+        type="password"
+        placeholder="Your password"
+        formControlName="password"
+      />
+      <button
+        nbButton
+        type="submit"
+        color="primary"
+        [disabled]="loginForm.invalid"
+      >
+        Submit
+      </button>
+    </form>
+  </nb-card-body>
+</nb-card>
