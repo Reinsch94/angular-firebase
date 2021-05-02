@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <nb-layout>
       <nb-layout-header fixed>
-        <!-- Insert header here -->
+        <app-header></app-header>
       </nb-layout-header>
 
       <nb-layout-column>
@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
       </nb-layout-column>
 
       <nb-layout-footer fixed>
-        <!-- Insert footer here -->
+        <app-footer></app-footer>
       </nb-layout-footer>
     </nb-layout>
   `,
