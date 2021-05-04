@@ -19,7 +19,6 @@ import {
   HeaderComponent,
   SidebarComponent,
 } from '../components';
-import { PostComponent } from './post/post.component';
 
 @NgModule({
   imports: [
@@ -41,7 +40,6 @@ import { PostComponent } from './post/post.component';
     HomeComponent,
     LoginComponent,
     RegisterComponent,
-    PostComponent,
   ],
 })
 export class PagesModule {}

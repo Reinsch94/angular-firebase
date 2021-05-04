@@ -13,6 +13,7 @@ import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PostListComponent } from './components/post-list/post-list.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,7 @@ import { AppComponent } from './app.component';
     NbThemeModule.forRoot({ name: 'corporate' }),
     NbEvaIconsModule,
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, PostListComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
