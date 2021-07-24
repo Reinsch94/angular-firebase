@@ -7,13 +7,13 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 import { NbEvaIconsModule } from '@nebular/eva-icons';
-import { NbLayoutModule, NbThemeModule } from '@nebular/theme';
+import { NbCardModule, NbLayoutModule, NbThemeModule } from '@nebular/theme';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PostListComponent } from './components/post-list/post-list.component';
 
 @NgModule({
   imports: [
@@ -24,11 +24,14 @@ import { PostListComponent } from './components/post-list/post-list.component';
     AppRoutingModule,
     NbThemeModule.forRoot(),
     NbLayoutModule,
+    NbCardModule,
     BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'corporate' }),
     NbEvaIconsModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  declarations: [AppComponent, PostListComponent],
+  declarations: [AppComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
