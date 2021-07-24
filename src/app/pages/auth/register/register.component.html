@@ -7,7 +7,7 @@
         nbInput
         placeholder="Your email"
         name="email"
-        email
+        formControlName="email"
         required
       />
       <input
@@ -16,11 +16,10 @@
         placeholder="Your password"
         name="password"
         required
+        formControlName="password"
         minlength="6"
       />
-      <button nbButton type="submit" [disabled]="registerForm.invalid">
-        Submit
-      </button>
+      <button nbButton type="submit">Submit</button>
     </form>
   </nb-card-body>
 </nb-card>
