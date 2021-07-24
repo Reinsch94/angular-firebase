@@ -1,1 +1,29 @@
-<p>home works!</p>
+<div
+  *ngIf="isLoggedIn$ | async; else elseBlock"
+  style="width: 50%; margin: 0 auto"
+>
+  <app-post-list></app-post-list>
+</div>
+<ng-template #elseBlock>
+  <nb-card status="info">
+    <nb-card-header>Welcome</nb-card-header>
+    <nb-card-body>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue sed
+        ligula nec dapibus. Duis rutrum, est eget ullamcorper fermentum, augue
+        est efficitur lectus, a tincidunt sapien nisl eget dui. Quisque ut
+        scelerisque elit. Nullam a diam quis ante varius facilisis et id massa.
+        Donec massa quam, pretium ac mauris ut, ultricies vulputate arcu.
+        Suspendisse quis ullamcorper urna. Pellentesque id diam non justo
+        lobortis condimentum. Quisque vel velit id ligula suscipit ullamcorper
+        at vestibulum sem. Ut semper ante nunc, sed mollis tortor luctus et. In
+        id pharetra ex. Duis vel orci massa. Nulla vel rutrum ex. Vestibulum non
+        erat vel erat luctus maximus. Morbi scelerisque maximus porttitor. Cras
+        a nisl quis erat commodo volutpat et eget nulla. Duis pulvinar, lacus in
+        placerat tristique, ipsum leo elementum nibh, eget laoreet urna arcu sit
+        amet sem.
+      </p>
+    </nb-card-body>
+    <nb-card-footer>By Alexandre Reinsch</nb-card-footer>
+  </nb-card>
+</ng-template>
