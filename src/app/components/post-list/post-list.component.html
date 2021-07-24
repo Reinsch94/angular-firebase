@@ -1,1 +1,24 @@
-<p>post-list works!</p>
+<nb-card>
+  <nb-card-header>Post</nb-card-header>
+  <nb-card-body>
+    <form [formGroup]="postForm" (ngSubmit)="create()">
+      <input
+        nbInput
+        type="text"
+        fullWidth
+        fieldSize="small"
+        placeholder="Title"
+        formControlName="title"
+      />
+      <textarea
+        nbInput
+        fullWidth
+        class="mt-10"
+        type="content"
+        placeholder="Content"
+        formControlName="content"
+      ></textarea>
+      <button nbButton type="submit" status="primary">Send</button>
+    </form>
+  </nb-card-body>
+</nb-card>
